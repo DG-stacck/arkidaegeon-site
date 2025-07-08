@@ -1,9 +1,25 @@
-
 import React from "react";
 
 export default function HomePage() {
   return (
     <main className="min-h-screen bg-white text-gray-900">
+      {/* Top Navbar */}
+      <header className="fixed top-0 left-0 w-full flex justify-between items-start px-6 py-4 bg-white z-50 border-b">
+        <div className="text-4xl font-extrabold tracking-tight leading-none">
+          ARKI_DAEGUN
+        </div>
+        <nav className="flex flex-col space-y-2 text-sm mt-2">
+          <a href="#architecture" className="hover:underline">Architecture</a>
+          <a href="#art" className="hover:underline">Art</a>
+          <a href="#performance" className="hover:underline">Performance</a>
+          <a href="#writings" className="hover:underline">Writings</a>
+          <a href="#about" className="hover:underline">About</a>
+        </nav>
+      </header>
+
+      {/* Page Padding to prevent overlap */}
+      <div className="pt-36" />
+
       {/* Hero Section */}
       <section className="flex flex-col items-center justify-center py-24 px-4 text-center">
         <h1 className="text-5xl font-bold tracking-tight mb-4">Daegeon Uh</h1>
@@ -11,15 +27,6 @@ export default function HomePage() {
           Architect. Artist. Dancer. Exploring the boundaries of space, motion, and image.
         </p>
       </section>
-
-      {/* Navigation */}
-      <nav className="flex justify-center space-x-8 py-4 text-lg border-t border-b">
-        <a href="#architecture" className="hover:underline">Architecture</a>
-        <a href="#art" className="hover:underline">Art</a>
-        <a href="#performance" className="hover:underline">Performance</a>
-        <a href="#writings" className="hover:underline">Writings</a>
-        <a href="#about" className="hover:underline">About</a>
-      </nav>
 
       {/* Sections */}
       <section id="architecture" className="py-16 px-8 bg-gray-100">
